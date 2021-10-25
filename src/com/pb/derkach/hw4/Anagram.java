@@ -25,7 +25,7 @@ public class Anagram {
         System.out.print("Введите второе предложение: ");
 
         String second = in.nextLine().toUpperCase();
-        String noSpace1 = first.replace(" ", "");
+        String noSpace1 = second.replace(" ", "");
         String noDot1 = noSpace1.replace(".", "");
         String noComma1 = noDot1.replace(",", "");
         String noHyphen1 = noComma1.replace("-", "");
