@@ -18,7 +18,7 @@ public class Main {
             a.add(i3);
         } catch (Exception e) {
         // Выводим исключение в случае переполнения массива Integer
-            System.out.printf("Массив Integer полон. Всего было добавлено %s элемента.\n", a.length());
+            System.out.print("Массив Integer полон. Всего было добавлено: " + a.length());
         }
         System.out.println("Размер массива Integer сотавляет: " + a.length());
         System.out.println("Среднее значение массива Integer сотавляет: " + a.average());
