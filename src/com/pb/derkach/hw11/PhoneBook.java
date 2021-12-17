@@ -9,7 +9,7 @@ public class PhoneBook {
     private LocalDate dateOfBirth;
     private String phone;
     private String address;
-    private LocalDateTime mod;
+    private LocalDateTime modification;
 
     public PhoneBook(){
     }
@@ -19,7 +19,7 @@ public class PhoneBook {
         this.dateOfBirth = dateOfBirth;
         this.phone = phone;
         this.address = address;
-        this.mod = LocalDateTime.now();
+        this.modification = LocalDateTime.now();
     }
 
     public String getFio() {
@@ -28,7 +28,7 @@ public class PhoneBook {
 
     public void setFio(String fio) {
         this.fio = fio;
-        this.mod = LocalDateTime.now();
+        this.modification = LocalDateTime.now();
     }
 
     public LocalDate getDateOfBirth() {
@@ -37,7 +37,7 @@ public class PhoneBook {
 
     public void setDateOfBirth(LocalDate dateOfBirth) {
         this.dateOfBirth = dateOfBirth;
-        this.mod = LocalDateTime.now();
+        this.modification = LocalDateTime.now();
     }
 
     public String getPhone() {
@@ -46,7 +46,7 @@ public class PhoneBook {
 
     public void setPhone(String phone) {
         this.phone = phone;
-        this.mod = LocalDateTime.now();
+        this.modification = LocalDateTime.now();
     }
 
     public String getAddress() {
@@ -55,15 +55,15 @@ public class PhoneBook {
 
     public void setAddress(String address) {
         this.address = address;
-        this.mod = LocalDateTime.now();
+        this.modification = LocalDateTime.now();
     }
 
-    public LocalDateTime getMod() {
-        return mod;
+    public LocalDateTime getModification() {
+        return modification;
     }
 
-    public void setMod(LocalDateTime mod) {
-        this.mod = mod;
+    public void setMod(LocalDateTime modification) {
+        this.modification = modification;
     }
 
     @Override
@@ -73,7 +73,7 @@ public class PhoneBook {
                 ", dateOfBirth=" + dateOfBirth +
                 ", phone='" + phone + '\'' +
                 ", address='" + address + '\'' +
-                ", mod=" + mod +
+                ", modification=" + modification +
                 '}';
     }
 }
