@@ -11,11 +11,11 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.*;
 
-public class Main {
+public class DemoMain {
     public static void main(String[] args) throws Exception {
 
         String phoneBookJson;
-        int index;
+        int ind;
 
         ObjectMapper mapper = new ObjectMapper();
         mapper.enable(SerializationFeature.INDENT_OUTPUT);
@@ -60,15 +60,15 @@ public class Main {
 
                 case "3":
                     System.out.println("Введите индекс записи для удаления: ");
-                    index = getIndex(scan);
-                    phoneBookList.remove(index);
-                    System.out.println("Запись под индексом " + index + " удалена.");
+                    ind = getIndex(scan);
+                    phoneBookList.remove(ind);
+                    System.out.println("Запись под индексом " + ind + " удалена.");
                     break;
 
                 case "4":
                     System.out.println("Введите индекс записи для поиска: ");
-                    index = getIndex(scan);
-                    phoneBookJson = mapper.writeValueAsString(phoneBookList.get(index));
+                    ind = getIndex(scan);
+                    phoneBookJson = mapper.writeValueAsString(phoneBookList.get(ind));
                     System.out.println(phoneBookJson);
                     break;
 

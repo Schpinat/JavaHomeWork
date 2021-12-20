@@ -8,17 +8,17 @@ public class PhoneBook {
     private String fio;
     private LocalDate dateOfBirth;
     private String phone;
-    private String address;
+    private String addr;
     private LocalDateTime modification;
 
     public PhoneBook(){
     }
 
-    public PhoneBook(String fio, LocalDate dateOfBirth, String phone, String address) {
+    public PhoneBook(String fio, LocalDate dateOfBirth, String phone, String addr) {
         this.fio = fio;
         this.dateOfBirth = dateOfBirth;
         this.phone = phone;
-        this.address = address;
+        this.addr = addr;
         this.modification = LocalDateTime.now();
     }
 
@@ -50,11 +50,11 @@ public class PhoneBook {
     }
 
     public String getAddress() {
-        return address;
+        return addr;
     }
 
-    public void setAddress(String address) {
-        this.address = address;
+    public void setAddress(String addr) {
+        this.addr = addr;
         this.modification = LocalDateTime.now();
     }
 
@@ -72,7 +72,7 @@ public class PhoneBook {
                 "fio='" + fio + '\'' +
                 ", dateOfBirth=" + dateOfBirth +
                 ", phone='" + phone + '\'' +
-                ", address='" + address + '\'' +
+                ", address='" + addr + '\'' +
                 ", modification=" + modification +
                 '}';
     }
