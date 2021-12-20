@@ -38,7 +38,7 @@ public class DemoMain {
             System.out.println("1) Вывести на экран данные справочник");
             System.out.println("2) Добавление записи");
             System.out.println("3) Удаление записи");
-            System.out.println("4) Найти запись");
+            System.out.println("4) Найти запись по ФИО");
             System.out.println("5) Отсортировать по ФИО");
             System.out.println("6) Отредактировать запись");
             System.out.println("7) Записать в файл");
@@ -59,14 +59,14 @@ public class DemoMain {
                     break;
 
                 case "3":
-                    System.out.println("Введите индекс записи для удаления: ");
+                    System.out.println("Введите ФИО для удаления: ");
                     ind = getIndex(scan);
                     phoneBookList.remove(ind);
-                    System.out.println("Запись под индексом " + ind + " удалена.");
+                    System.out.println("Запись " + ind + " удалена.");
                     break;
 
                 case "4":
-                    System.out.println("Введите индекс записи для поиска: ");
+                    System.out.println("Введите ФИО записи для поиска: ");
                     ind = getIndex(scan);
                     phoneBookJson = mapper.writeValueAsString(phoneBookList.get(ind));
                     System.out.println(phoneBookJson);
