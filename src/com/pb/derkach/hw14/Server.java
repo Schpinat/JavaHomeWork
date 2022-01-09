@@ -57,7 +57,7 @@ public class Server {
 
                 while (true) {
                     message = in.readLine();
-                    if (message.equalsIgnoreCase("exit")) {
+                    if (message.equalsIgnoreCase("Exit")) {
                         break;
                     } else {
                         for (ServConnection sc : Server.servConnections) {
